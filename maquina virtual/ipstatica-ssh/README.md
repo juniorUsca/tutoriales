@@ -26,11 +26,42 @@ Deberia de aparecer 3 redes, 2 de los adaptadores y la otra de localhost
 $ sudo vim /etc/network/interfaces
 ```
 
-Dependiendo del nombre del adaptador 2 que creamos previamente, agregamos lo siguiente:
+Dependiendo del nombre del **adaptador 2** que creamos previamente, agregamos lo siguiente, en nuestro caso en nombre es **eth1**:
 
-```bash
-  auto eth1
-  iface eth1 inet static
-    address 192.168.56.10
-    netmask 255.255.255.0
 ```
+auto eth1
+iface eth1 inet static
+  address 192.168.56.10
+  netmask 255.255.255.0
+```
+
+Activamos la red con:
+```
+$ sudo ifup eth1
+```
+
+### Configurando SSH en una maquina virtual:
+
+#### Instalamos SSH
+
+```
+$ sudo apt-get isntall openssh-server
+```
+
+#### Verificamos la coneccion desde cualquier otra maquina en la misma red
+```
+$ ping 192.168.56.10
+```
+
+#### Para ingresar por ssh a la maquina configurada usamos desde cualquier otra maquina en la misma red
+```
+$ ssh <usernam>@192.168.56.10
+```
+
+
+### Referencias:
+- http://debugcompany.blogspot.pe/2016/07/configurar-virtualbox-para-ingresar-con.html
+
+- https://muffinresearch.co.uk/howto-ssh-into-virtualbox-3-linux-guests/
+
+- http://askubuntu.com/questions/293816/in-virtualbox-how-do-i-set-up-host-only-virtual-machines-that-can-access-the-in
