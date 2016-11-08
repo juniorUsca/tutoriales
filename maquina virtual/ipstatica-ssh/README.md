@@ -32,3 +32,6 @@ Dependiendo del nombre del adaptador 2 que creamos previamente, agregamos lo sig
 + this will be highlighted in green
 - this will be highlighted in red
 ```
+
+
+ <span style="color:blue">some *blue* text</span>.
