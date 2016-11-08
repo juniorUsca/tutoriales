@@ -28,10 +28,9 @@ $ sudo vim /etc/network/interfaces
 
 Dependiendo del nombre del adaptador 2 que creamos previamente, agregamos lo siguiente:
 
-```diff
-+ this will be highlighted in green
-- this will be highlighted in red
+```bash
+  auto eth1
+  iface eth1 inet static
+    address 192.168.56.10
+    netmask 255.255.255.0
 ```
-
-
- <span style="color:blue">some *blue* text</span>.
