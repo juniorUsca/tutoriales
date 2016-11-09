@@ -45,7 +45,7 @@ $ sudo ifup eth1
 #### Instalamos SSH
 
 ```
-$ sudo apt-get isntall openssh-server
+$ sudo apt-get install openssh-server
 ```
 
 #### Verificamos la coneccion desde cualquier otra maquina en la misma red
