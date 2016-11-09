@@ -87,6 +87,20 @@ $ ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@192.168.1.241
 $ ssh-copy-id -i $HOME/.ssh/id_rsa.pub hduser@192.168.1.242
 ```
 
+#### Realizando conecciones SSH
+Probaremos las conecciones entre las maquinas
+En cada maquina ejecutamos:
+```
+$ ssh hduser@192.168.1.240
+$ exit
+$ ssh hduser@192.168.1.241
+$ exit
+$ ssh hduser@192.168.1.242
+$ exit
+$ ssh hduser@192.168.1.243
+$ exit
+```
+
 #### Configurando el hostname
 
 En el **master**:
@@ -211,8 +225,8 @@ export HADOOP_OPTS=-Djava.net.preferIPv4Stack=true
 
 Generamos una carpeta para datos temporales
 ```
-sudo mkdir -p /app/hadoop/tmp
-sudo chown hduser:hadoop /app/hadoop/tmp
+$ sudo mkdir -p /app/hadoop/tmp
+$ sudo chown hduser:hadoop /app/hadoop/tmp
 ```
 Editamos **/opt/hadoop-2.7.3/etc/hadoop/core-site.xml**, abrir el archivo y cambiar lo siguiente entre el tag `<configuration> </configuration>`
 
@@ -241,6 +255,8 @@ $ sudo mkdir -p /opt/hadoop-2.7.3/hadoop_store/hdfs/datanode
 $ sudo chown -R hduser:hadoop /opt/hadoop-2.7.3/hadoop_store
 ```
 Editamos **/opt/hadoop-2.7.3/etc/hadoop/hdfs-site.xml**, abrir el archivo y cambiar lo siguiente entre el tag `<configuration> </configuration>`
+
+El factor de replicación lo pusimos en 4 por ser 4 maquinas las que trabajaran.
 ```xml
 <configuration>
  <property>
@@ -396,19 +412,19 @@ Tambien podemos verificar ejecutando `$ jps` en cada maquina:
 Iniciamos yarn
 
 ```
-$ yarn-dfs.sh
+$ start-yarn.sh
 ```
 
 #### Generando informacion en el Master
 Usaremos c++ para generar un archivo con informacion:
 
-El codigo lo podemos encontrar en http://google.com
+El codigo lo podemos encontrar en https://github.com/juniorUsca/hadoop_examples
 
 
 Lo descargamos con git y lo compilamos
 ```
 $ git clone https://github.com/juniorUsca/hadoop_examples.git
-$ cd hadoop_examples
+$ cd hadoop_examples/generate_data
 $ g++ main.cpp
 $ ./a.out
 ```
