@@ -50,8 +50,8 @@ Hadoop requiere acceso SSH para manejar los nodos, por ejemplo máquinas remotas
 Asi que necesitamos tener  SSH levantado y corriendo en nuestras maquinas. 
 ```
 $ su - hduser
-$ ssh -keygen -t rsa -P “”
-$ cat $HOME/ .ssh/id_rsa.pub >> $HOME/ .ssh/authorized_keys
+$ ssh-keygen -t rsa -P ""
+$ cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
 ```
 Para probar que todo salio bien
 ```
@@ -162,7 +162,7 @@ Ahora **reiniciamos** cada maquina.
 
 #### Instalando Hadoop 2.7.3 a cada maquina
 
-Descargar Hadoop de su página:
+Descargar Hadoop de su página, la versión binary:
 
 http://hadoop.apache.org/#Download+Hadoop 
 
