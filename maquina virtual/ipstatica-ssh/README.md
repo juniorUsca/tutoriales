@@ -64,7 +64,7 @@ $ sudo ifconfig vboxnet0 up
 $ ifconfig
 ```
 
-### Si no conecta a la maquina virtual y no tienes ip, aplicar:
+### Si no conecta a la maquina virtual y no tienes ip, aplicar en tu HOST:
 ```
 $ sudo ifconfig vboxnet0 192.168.56.1
 $ ifconfig
