@@ -63,9 +63,10 @@ $ ssh <usernam>@192.168.56.10
 $ sudo ifconfig vboxnet0 up
 $ ifconfig
 ```
-### Si no conecta a la maquina virtual, aplicar:
+
+### Si no conecta a la maquina virtual y no tienes ip, aplicar:
 ```
-$ sudo ifconfig vboxnet 192.168.56.1
+$ sudo ifconfig vboxnet0 192.168.56.1
 $ ifconfig
 ```
 
