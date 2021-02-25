@@ -5,7 +5,7 @@
 
 
 
-Error en los estaticos:
+### Error en los estaticos:
 
 ```
 Open up app/etc/di.xml and find the virtualType name="developerMaterialization" section. In that section you'll find an item name="view_preprocessed" that needs to be modified or deleted. You can modify it by changing the contents from Magento\Framework\App\View\Asset\MaterializationStrategy\Symlink to Magento\Framework\App\View\Asset\MaterializationStrategy\Copy
@@ -27,8 +27,7 @@ Ref:
 - https://magento.stackexchange.com/questions/200525/unable-to-retrieve-deployment-version-of-static-files-from-the-file-system/259932#259932?newreg=63f8adce8d8a43cfadff0193e71014a6
 
 
-
-
+### Deshabilitar un plugin
 Para listar el estado de los plugins usar:
 ```
 bin/magento module:status
