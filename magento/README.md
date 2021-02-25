@@ -23,9 +23,8 @@ php bin/magento setup:static-content:deploy -f
 php bin/magento setup:static-content:deploy es_PE --exclude-theme Magento/luma --exclude-theme Magento/blank -f
 ```
 Ref:
-https://magento.stackexchange.com/questions/64802/magento-2-404-error-for-scripts-and-css
-Ref:
-https://magento.stackexchange.com/questions/200525/unable-to-retrieve-deployment-version-of-static-files-from-the-file-system/259932#259932?newreg=63f8adce8d8a43cfadff0193e71014a6
+- https://magento.stackexchange.com/questions/64802/magento-2-404-error-for-scripts-and-css
+- https://magento.stackexchange.com/questions/200525/unable-to-retrieve-deployment-version-of-static-files-from-the-file-system/259932#259932?newreg=63f8adce8d8a43cfadff0193e71014a6
 
 
 
@@ -41,4 +40,4 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 ```
 
 Ref:
-https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html
+- https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html
