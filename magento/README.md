@@ -1,7 +1,7 @@
 
 ### Instalar un plugin
 
-Ubicar el codigo en la carpeta app/code/<Empresa>/<Modulo>/
+Ubicar el codigo en la carpeta app/code/\<Empresa\>/\<Modulo\>/
   
 Ejecutar:
 ```
