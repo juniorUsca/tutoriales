@@ -1,5 +1,15 @@
 
+### Instalar un plugin
 
+Ubicar el codigo en la carpeta app/code/<Empresa>/<Modulo>/
+  
+Ejecutar:
+```
+php bin/magento setup:upgrade
+```
+
+Ref:
+ - https://marketplace.magento.com/media/catalog/product/pozzito-pozzito-module-livechat-100-0-2-ce/user_guides.pdf
 
 
 
