@@ -44,8 +44,8 @@ bin/magento module:status
 ```
 Para habilitar o deshabilitar un plugin usar:
 ```
-bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
-bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
+php bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
+php bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
 Ref:
